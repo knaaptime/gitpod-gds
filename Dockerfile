@@ -7,7 +7,7 @@ ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 #--- Python ---#
 
 RUN conda install --freeze-installed --yes mamba \
-    && conda config --add channels conda-forge \
+    && conda config --add channels conda-forge 
 
 ADD ../.ci/39.yml ./
 RUN mamba env create -f 39.yml \
