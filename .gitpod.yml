@@ -1,5 +1,5 @@
 image:
-  file: Dockerfile
+  file: .ci/Dockerfile
 ports:
 - port: 8050
   onOpen: open-preview
